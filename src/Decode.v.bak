@@ -1,0 +1,11 @@
+// ===============================================
+// Module Decode
+// + Đọc opcode
+// + Đọc funct3
+// + Đọc funct7
+// + Xác định instructipn type
+// ===============================================
+module Decode(
+	
+);
+endmodule

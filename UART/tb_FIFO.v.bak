@@ -1,0 +1,86 @@
+// ============================================
+// Testbench FIFO
+// ============================================
+
+`timescale 1ns/1ps
+
+module tb_FIFO;
+
+    parameter W = 8;
+    parameter L = 8;
+
+    reg clk;
+    reg reset;
+    reg wr_en;
+    reg rd_en;
+    reg [W - 1:0] wr_data;
+
+    wire [W - 1:0] rd_data;
+    wire empty;
+    wire full;
+	 
+	 //Test
+	 wire [3:0] cnt;
+
+    fifo #(.W(W), .L(L)) dut (
+        .clk(clk),
+        .reset(reset),
+        .wr_en(wr_en),
+        .rd_en(rd_en),
+        .wr_data(wr_data),
+        .rd_data(rd_data),
+        .empty(empty),
+        .full(full),
+		  
+		  //Test
+		  .cnt(cnt)
+    );
+
+    initial begin
+        clk = 0;
+        forever #10 clk = ~clk;
+    end
+
+    initial begin
+        reset = 0;
+        wr_en = 0;
+        rd_en = 0;
+        wr_data = 0;
+
+        #40
+        reset = 1;
+
+        repeat(L) begin
+            @(posedge clk);
+            wr_en = 1;
+            wr_data = wr_data + 1;
+            @(posedge clk);
+            wr_en = 0;
+        end
+
+        repeat(L) begin
+            @(posedge clk);
+            rd_en = 1;
+            @(posedge clk);
+            rd_en = 0;
+        end
+
+        repeat(L) begin
+            @(posedge clk);
+            wr_en = 1;
+            wr_data = wr_data + 2;
+            @(posedge clk);
+            wr_en = 0;
+        end
+
+        repeat(L) begin
+            @(posedge clk);
+            rd_en = 1;
+            @(posedge clk);
+            rd_en = 0;
+        end
+
+        #100 $stop;
+    end
+	 
+endmodule

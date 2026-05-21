@@ -1,0 +1,11 @@
+// ====================================
+// Testbench CORE_PC
+// ====================================
+
+`timescale 1ns/1ps
+
+module tb_CORE_PC;
+	reg clk;
+	reg reset;
+	
+endmodule

@@ -1,0 +1,52 @@
+# Reading pref.tcl
+# do uart_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/3\ -\ UART/VGA {D:/1 - FPGA/5 - RISCV/3 - UART/VGA/VGA_Control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:47:24 on Apr 04,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/3 - UART/VGA" D:/1 - FPGA/5 - RISCV/3 - UART/VGA/VGA_Control.v 
+# -- Compiling module VGA_Control
+# 
+# Top level modules:
+# 	VGA_Control
+# End time: 13:47:24 on Apr 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/1\ -\ FPGA/5\ -\ RISCV/3\ -\ UART/VGA {D:/1 - FPGA/5 - RISCV/3 - UART/VGA/tb_VGA_Control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:47:24 on Apr 04,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/1 - FPGA/5 - RISCV/3 - UART/VGA" D:/1 - FPGA/5 - RISCV/3 - UART/VGA/tb_VGA_Control.v 
+# -- Compiling module tb_VGA_Control
+# 
+# Top level modules:
+# 	tb_VGA_Control
+# End time: 13:47:24 on Apr 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_VGA_Control
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_VGA_Control 
+# Start time: 13:47:24 on Apr 04,2026
+# Loading work.tb_VGA_Control
+# Loading work.VGA_Control
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/1 - FPGA/5 - RISCV/3 - UART/VGA/tb_VGA_Control.v(47)
+#    Time: 32480090 ns  Iteration: 2  Instance: /tb_VGA_Control
+# 1
+# Break in Module tb_VGA_Control at D:/1 - FPGA/5 - RISCV/3 - UART/VGA/tb_VGA_Control.v line 47
+# End time: 13:48:24 on Apr 04,2026, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0

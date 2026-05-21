@@ -1,0 +1,10 @@
+// ========================================================
+// Module UART_Tx
+// + Bộ Tx của UART
+// + Gửi tín hiệu từ kit DE10 tới máy tính qua CP2102 TTL
+// + Thiết kế theo FSM
+// ========================================================
+
+module UART_Tx (
+);
+endmodule

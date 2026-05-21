@@ -1,0 +1,10 @@
+// ======================================================
+// Module Tx_TOP
+// + Kết hợp Baud_gen + Tx + FIFO
+// + CPU --> FIFO_Tx --> UART_Tx
+// + Module dùng để kiểm tra chức năng của Tx tổng hợp
+// ======================================================
+
+module Tx_TOP (
+)
+endmodule

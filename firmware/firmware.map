@@ -1,0 +1,95 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+                              ./main.o (__divsi3)
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .debug_line    0x00000000      0x153 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+ .debug_line_str
+                0x00000000       0x88 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+ .debug_info    0x00000000       0x5f /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+ .debug_abbrev  0x00000000       0x28 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+ .debug_aranges
+                0x00000000       0x20 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+ .debug_str     0x00000000       0xcd /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000         0x00001000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000      0x3d0
+ *(.text.start)
+ .text.start    0x00000000        0xc ./start.o
+                0x00000000                start
+ *(.text*)
+ .text          0x0000000c        0x0 ./start.o
+ .text          0x0000000c      0x2f4 ./main.o
+                0x0000000c                delay
+                0x0000003c                vga_clear
+                0x00000080                vga_put_string
+                0x000000d8                vga_put_number
+                0x000001f0                vga_draw_color_blocks
+                0x00000274                main
+ .text          0x00000300       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+                0x00000300                __divsi3
+                0x00000308                __hidden___udivsi3
+                0x00000308                __udivsi3
+                0x00000350                __umodsi3
+                0x00000384                __modsi3
+ *(.rodata*)
+ .rodata.str1.4
+                0x000003b4       0x1b ./main.o
+                0x000003d0                        . = ALIGN (0x4)
+ *fill*         0x000003cf        0x1 
+
+.rela.dyn       0x000003d0        0x0
+ .rela.text.start
+                0x000003d0        0x0 ./start.o
+
+.data           0x000003d0        0x0
+ *(.data*)
+ .data          0x000003d0        0x0 ./start.o
+ .data          0x000003d0        0x0 ./main.o
+ .data          0x000003d0        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+                0x000003d0                        . = ALIGN (0x4)
+
+.bss            0x000003d0        0x0
+ *(.bss*)
+ .bss           0x000003d0        0x0 ./start.o
+ .bss           0x000003d0        0x0 ./main.o
+ .bss           0x000003d0        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+                0x000003d0                        . = ALIGN (0x4)
+                0x000003d0                        . = ALIGN (0x4)
+                0x00001000                        . = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00001000                        _stack_top = .
+LOAD ./start.o
+LOAD ./main.o
+LOAD /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a
+OUTPUT(firmware.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1a ./start.o
+ .riscv.attributes
+                0x0000001a       0x1c ./main.o
+ .riscv.attributes
+                0x00000036       0x1a /opt/riscv32i/lib/gcc/riscv32-unknown-elf/15.2.0/libgcc.a(div.o)
+
+.comment        0x00000000       0x1a
+ .comment       0x00000000       0x1a ./main.o
+                                 0x1b (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 ./main.o

@@ -1,0 +1,8 @@
+// ===============================================
+// Testbench VGA Control
+// ===============================================
+
+`timescale 1ns/1ps
+
+module tb_VGA_Control;
+endmodule

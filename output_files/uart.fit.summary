@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Apr 05 06:03:25 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : uart
+Top-level Entity Name : DE10_CORE
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 42,034 / 49,760 ( 84 % )
+    Total combinational functions : 24,413 / 49,760 ( 49 % )
+    Dedicated logic registers : 33,111 / 49,760 ( 67 % )
+Total registers : 33111
+Total pins : 63 / 360 ( 18 % )
+Total virtual pins : 0
+Total memory bits : 512 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

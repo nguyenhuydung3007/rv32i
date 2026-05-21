@@ -1,0 +1,12 @@
+// ===============================
+// Testbench Regfile
+// ===============================
+
+`timescale 1ns/1ps
+
+module tb_Regfile;
+	reg clk;
+	reg reset_n;
+	reg write_en;
+	
+endmodule

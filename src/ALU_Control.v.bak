@@ -1,0 +1,10 @@
+// ==================================================
+// Module ALU_Control
+// + Xác định phép toán mà ALU cần thực hiện
+// 
+// *Luồng dữ liệu:
+// Instruction --> Decode --> ALU_Control --> ALU
+// ==================================================
+module ALU_Control(
+);
+endmodule

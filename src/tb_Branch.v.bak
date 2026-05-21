@@ -1,0 +1,12 @@
+// ==============================================
+// Testbench Branch
+// ==============================================
+`timescale 1ns/1ps
+
+module tb_Branch;
+	reg [31:0]	A;
+	reg [31:0]	B;
+	reg			BrUn;
+	wire			BrLT;
+	wire 			BrEQ;
+endmodule

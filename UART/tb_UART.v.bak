@@ -1,0 +1,14 @@
+// ======================================
+// Testbench UART tổng hợp
+// ======================================
+
+`timescale 1ns/1ps
+
+module tb_UART;
+	
+	parameter CLK_SYS		= 50_000_000;
+	parameter BAUD_RATE	= 9600;
+	parameter DATA_BITS	= 8;
+	parameter OVERSAMPLE	= 16;
+	
+endmodule
