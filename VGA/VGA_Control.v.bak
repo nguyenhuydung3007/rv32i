@@ -1,9 +1,0 @@
-// ===================================================
-// VGA
-// Module VGA_Control
-// + Điều khiển các tín hiệu màn hình VGA
-// ===================================================
-
-module VGA_Control (
-);
-endmodule

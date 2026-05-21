@@ -1,9 +1,0 @@
-// ===================================================================
-// Module Branch
-// + Branch là mạch so sánh trong CPU RISC-V
-// + Dùng để xác định điều kiện nhảy của các lệnh branch
-// + Trong project có các cấu trúc điều kiện thì cần phải có branch
-// ===================================================================
-module Branch (
-);
-endmodule

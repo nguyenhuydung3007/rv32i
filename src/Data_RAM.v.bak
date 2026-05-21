@@ -1,9 +1,0 @@
-// =========================================
-// Module Data_RAM
-// + Bộ nhớ của CPU
-// + Lưu dữ liệu của chương trình
-// =========================================
-
-module Data_RAM (
-);
-endmodule

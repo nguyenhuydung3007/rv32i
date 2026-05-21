@@ -1,9 +1,0 @@
-// =====================================================
-// Module VGA_Ctrl_Reg
-// + Dùng để chọn kích thước font chữ
-// + Kích thước mặc định là 8x16
-// =====================================================
-
-module VGA_Ctrl_Reg (
-);
-endmodule

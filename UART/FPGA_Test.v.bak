@@ -1,9 +1,0 @@
-// ===========================================
-// Module FPGA_Test
-// + Test các module UART
-// ===========================================
-
-module FPGA_Test (
-	
-);
-endmodule
